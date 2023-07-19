@@ -24,7 +24,6 @@ jobs:
     steps:
     - uses: actions/checkout@v3
     - name: Notify Slack Test Result
-      uses: poojithaPoojaj/SampleProject
       with:
           title: API Tests
           slackbotid: D0526USBSPJ
