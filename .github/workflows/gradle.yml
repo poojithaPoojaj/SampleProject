@@ -23,10 +23,11 @@ jobs:
 
     steps:
     - name: Make POST Request
-      run: |
+      run: |   
         API_ENDPOINT='https://hooks.slack.com/services/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'
         TEXT_DATA="This is some text data."
-        # Make the POST request using curl
+        echo "API Endpoint: $API_ENDPOINT"
+        echo "Text Data: $TEXT_DATA"
         curl -X POST -d "$TEXT_DATA" "$API_ENDPOINT"
 #     - name: Make Request
 #       id: myRequest
