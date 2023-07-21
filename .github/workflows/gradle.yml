@@ -24,7 +24,7 @@ jobs:
     steps:
     - name: Make Request
       id: myRequest
-      uses: fjogeleit/http-request-action@v1
+      uses: octokit/request-action@v2.x
       with:
        url: 'https://hooks.slack.com/services/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'
        method: 'POST'
