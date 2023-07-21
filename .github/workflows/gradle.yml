@@ -24,7 +24,7 @@ jobs:
     steps:
     - uses: actions/checkout@v3
     - name: Deploy Stage
-      uses: http-request-action@v1
+    - uses: http-request-action@v1
       with:
         url: 'https://hooks.slack.com/services/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'
         method: 'POST'
